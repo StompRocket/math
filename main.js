@@ -18,6 +18,7 @@ var app = new Vue({
             console.log(store)
             if (store) {
               $('#oldResults').prepend('<p>' + this.equation + ' = ' + this.result + '</p>')
+              this.equation = this.result
             }
           } else {
             this.result = ''
