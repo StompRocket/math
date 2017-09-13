@@ -4,8 +4,24 @@ body, html {
   font-family: Sans-Serif;
 }
 
+#helpContainer {
+  width: 5%;
+  float: left;
+  height: 6vw;
+}
+
+#helpContainer i {
+  font-size: 5vw;
+  line-height: 6vw;
+  margin-top: 2vw;
+}
+
+#equationContainer {
+  min-width: 95%;
+  float: right;
+}
+
 #equation {
-  width: 90%;
   font-size: 6vw;
   margin-bottom: 0px;
   margin-top: 10px;

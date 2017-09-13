@@ -4,19 +4,26 @@
 <head>
   <title>Stomprocket Math</title>
   <link rel="stylesheet" href="./main.css">
-
+  <script src="https://use.fontawesome.com/21958f18ff.js" charset="utf-8"></script>
 </head>
 
 <body>
 
   <main id="app" class="container">
     <h1>Stomprocket Math</h1>
+
     <form id="equationForm" v-on:submit.prevent="evaluate(true)">
-      <input placeholder="Type Equation Here" id="equation" v-model="equation" v-on:keyup="evaluate(false)">
+      <div id="helpContainer"><i class="fa fa-question-circle" aria-hidden="true"></i>
+      </div>
+      <div id="equationContainer">
+        <input placeholder="Type Equation Here" id="equation" v-model="equation" v-on:keyup="evaluate(false)" v-on:blur="evaluate(false)" v-on:paste="evaluate(false)" v-on:delete="evaluate(false)" v-on:focus="evaluate(false)">
+        <p id="result">{{result}}</p>
+        <div id="oldResults">
+        </div>
+      </div>
+
     </form>
-    <p id="result">{{result}}</p>
-    <div id="oldResults">
-    </div>
+
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="math.min.js"></script>
