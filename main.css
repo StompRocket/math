@@ -13,12 +13,13 @@ body, html {
 #helpContainer i {
   font-size: 5vw;
   line-height: 6vw;
-  margin-top: 2vw;
+  margin-top: 4vw;
 }
 
 #equationContainer {
   min-width: 95%;
   float: right;
+  margin-top: 2vw;
 }
 
 #equation {
