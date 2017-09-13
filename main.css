@@ -1,0 +1,62 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Sans-Serif;
+}
+
+#equation {
+  width: 90%;
+  font-size: 6vw;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #212121;
+  height: 7vw;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  transition-duration: 0.3s;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#equation:focus {
+  outline: none;
+  border-bottom: 2px solid #212121;
+  transition-duration: 0.5s;
+}
+
+#result {
+  font-size: 5vw;
+  margin-top: 3px;
+  font-weight: 300;
+  color: #515151;
+  margin-bottom: 0px;
+  height: 6vw;
+}
+
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+h1 {
+  color: #212121;
+  font-weight: 800;
+  margin-top: -10px;
+}
+
+#oldResults {
+  font-size: 2.5vw;
+  font-weight: 100;
+  color: #656565;
+  margin-top: 5px;
+}
+
+#oldResults p {
+  margin-bottom: 0px;
+  margin-top: 1px;
+}

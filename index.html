@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Testing</title>
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+  <main id="app" class="container">
+    <h1>Math.JS</h1>
+    <form id="equationForm" v-on:submit.prevent="evaluate(true)">
+      <input placeholder="Type Equation Here" id="equation" v-model="equation" v-on:keyup="evaluate(false)">
+    </form>
+    <p id="result">{{result}}</p>
+    <div id="oldResults">
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="math.min.js"></script>
+  <script src="vue.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
