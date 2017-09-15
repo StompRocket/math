@@ -2,7 +2,8 @@ var app = new Vue({
   el: '#app',
   data: {
     equation: '',
-    result: ''
+    result: '',
+    oldResults: []
   },
   methods: {
     evaluate: function (store) {
@@ -15,9 +16,11 @@ var app = new Vue({
             } else {
               this.result = result
             }
-            console.log(store)
+            //console.log(store)
             if (store) {
-              $('#oldResults').prepend('<p>' + this.equation + ' = ' + this.result + '</p>')
+              this.oldResults.unshift(this.equation + " = " + this.result)
+
+
               this.equation = this.result
             }
           } else {
