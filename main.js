@@ -32,6 +32,13 @@ var app = new Vue({
       } catch (err) {
         // window.alert(err)
       }
+    },
+    removeItem: function (item) {
+      console.log(this.oldResults);
+      console.log(item);
+      var index = this.oldResults.indexOf(item)
+      this.oldResults.splice(index, 1)
+        console.log(this.oldResults);
     }
   }
 })
