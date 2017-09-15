@@ -77,3 +77,15 @@ h1 {
   margin-bottom: 0px;
   margin-top: 1px;
 }
+
+.fa-times {
+  cursor: pointer;
+  color: rgb(249, 75, 75);
+  opacity: 0.3;
+  transition-duration: 0.3s;
+}
+
+.fa-times:hover {
+  transition-duration: 0.3s;
+  opacity: 1;
+}

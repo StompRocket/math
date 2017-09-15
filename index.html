@@ -19,7 +19,7 @@
         <input placeholder="Type Equation Here" id="equation" v-model="equation" v-on:keyup="evaluate(false)" v-on:blur="evaluate(false)" v-on:paste="evaluate(false)" v-on:delete="evaluate(false)" v-on:focus="evaluate(false)">
         <p id="result">{{result}}</p>
         <div id="oldResults">
-          <p v-for="item in oldResults" style="display:block; cursor: pointer;" >
+          <p v-for="item in oldResults" style="display:block; ">
             {{item}} <i class="fa fa-times" aria-hidden="true" v-on:click="removeItem(item)"></i>
           </p>
         </div>
