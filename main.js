@@ -18,9 +18,9 @@ var app = new Vue({
             }
             //console.log(store)
             if (store) {
-              this.oldResults.unshift(this.equation + " = " + this.result)
-
-
+              if (this.equation !== this.result){
+                this.oldResults.unshift(this.equation + " = " + this.result)
+              }
               this.equation = this.result
             }
           } else {
@@ -34,11 +34,17 @@ var app = new Vue({
       }
     },
     removeItem: function (item) {
-      console.log(this.oldResults);
-      console.log(item);
+      console.log(this.oldResults)
+      console.log(item)
       var index = this.oldResults.indexOf(item)
       this.oldResults.splice(index, 1)
-        console.log(this.oldResults);
+      console.log(this.oldResults)
+    },
+    helpMenu: function () {
+      $('#modal').attr('class', 'modal is-active')
+    },
+    closeMenu: function () {
+      $('#modal').attr('class', 'modal')
     }
   }
 })
