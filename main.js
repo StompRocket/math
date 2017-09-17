@@ -16,10 +16,10 @@ var app = new Vue({
             } else {
               this.result = result
             }
-            //console.log(store)
+            // console.log(store)
             if (store) {
-              if (this.equation !== this.result){
-                this.oldResults.unshift(this.equation + " = " + this.result)
+              if (this.equation !== this.result) {
+                this.oldResults.unshift(this.equation + ' = ' + this.result)
               }
               this.equation = this.result
             }
@@ -41,10 +41,11 @@ var app = new Vue({
       console.log(this.oldResults)
     },
     helpMenu: function () {
-      $('#modal').attr('class', 'modal is-active')
+      $('#modal').addClass('is-active')
     },
     closeMenu: function () {
-      $('#modal').attr('class', 'modal')
+      console.log('closing')
+      $('#modal').removeClass('is-active')
     }
   }
 })
