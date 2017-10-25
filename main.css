@@ -29,7 +29,8 @@ body, html {
   font-weight: 700;
   color: #212121;
   height: 7vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   border-bottom: 1px solid grey;
   transition-duration: 0.3s;
   border-top: none;
