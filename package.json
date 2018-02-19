@@ -10,6 +10,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "mathjs": "^3.20.2",
+    "mathsteps": "^0.2.0",
+    "minireset.css": "0.0.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

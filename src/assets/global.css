@@ -1,0 +1,9 @@
+html, body, .page, #app {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #F9F6F2;
+  font-family: 'Lato', sans-serif;
+  color: #86B2B3;
+}
