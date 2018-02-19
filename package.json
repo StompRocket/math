@@ -1,7 +1,7 @@
 {
   "name": "sr-math",
-  "version": "1.0.0",
-  "description": "A text base calculator",
+  "version": "0.2.0",
+  "description": "A text based calculator",
   "author": "Ronan18 <ronan@graphitewriter.com>",
   "private": true,
   "scripts": {

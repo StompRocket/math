@@ -1,6 +1,6 @@
-# sr-math
+# Stomp Rocket Math
 
-> A text base calculator
+> A text based calculator
 
 ## Build Setup
 
