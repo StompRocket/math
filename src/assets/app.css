@@ -1,0 +1,45 @@
+.app {
+  padding-top: 2vw;
+}
+
+.equationForm {
+  display: block;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #EFE4DE;
+}
+
+.equationInput {
+  width: 100%;
+  height: 6vw;
+  font-size: 4vw;
+  color: #F9F6F2;
+  font-weight: 500;
+  border: none;
+  background-color: #86B2B3;
+  padding: 0.5vw;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.answer {
+  margin-bottom: 5px;
+  font-size: 3vw;
+  color: #363636;
+}
+
+.historyItem {
+  font-size: 1vw;
+}
+
+.equationInput:focus {
+  outline: none;
+}
+
+.app {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
