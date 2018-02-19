@@ -1,13 +1,14 @@
+.app {
+  padding-top: 2vw;
+}
+
 .equationForm {
   display: block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 ::placeholder {
   /* Most modern browsers support this now. */
-  color: #e2e2e2;
+  color: #EFE4DE;
 }
 
 .equationInput {
@@ -19,6 +20,18 @@
   border: none;
   background-color: #86B2B3;
   padding: 0.5vw;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.answer {
+  margin-bottom: 5px;
+  font-size: 3vw;
+  color: #363636;
+}
+
+.historyItem {
+  font-size: 1vw;
 }
 
 .equationInput:focus {
