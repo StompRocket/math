@@ -1,0 +1,16 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Stomp Rocket Math",
+  "short_name": "SR Math",
+  "icons": [{
+    "src": "\/assets\/images\/touch\/android-chrome-192x192.png",
+    "sizes": "192x192",
+    "type": "image\/png"
+  }],
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "natural"
+}
